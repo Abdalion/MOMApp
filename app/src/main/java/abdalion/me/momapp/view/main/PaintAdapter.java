@@ -1,4 +1,4 @@
-package abdalion.me.momapp.view;
+package abdalion.me.momapp.view.main;
 
 import android.content.Context;
 import android.net.Uri;

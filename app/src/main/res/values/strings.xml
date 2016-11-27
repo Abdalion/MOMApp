@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MOMApp</string>
+    <string name="title_activity_detalle">DetalleActivity</string>
 </resources>

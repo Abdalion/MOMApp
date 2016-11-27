@@ -1,14 +1,13 @@
-package abdalion.me.momapp.view;
+package abdalion.me.momapp.view.main;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 
 import abdalion.me.momapp.R;
 import abdalion.me.momapp.controller.ArtistController;
-import abdalion.me.momapp.model.Artist;
-import abdalion.me.momapp.model.ArtistContainer;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         PaintAdapter paintAdapter = new PaintAdapter(getApplicationContext());
