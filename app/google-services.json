@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "121422973252",
+    "firebase_url": "https://momapp-67135.firebaseio.com",
+    "project_id": "momapp-67135",
+    "storage_bucket": "momapp-67135.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121422973252:android:2e997429602ad90a",
+        "android_client_info": {
+          "package_name": "abdalion.me.momapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121422973252-4mi4e61qbe99idh18lva19saiqcbjq70.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCttp71fomcxGSikvFrUn7IZDRoLrtJvMo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
