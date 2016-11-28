@@ -35,6 +35,18 @@ public class ArtistController {
         return paintList;
     }
 
+    public Artist getArtistByPaint(String paintName, Context context) {
+        ArtistDAO artistDAO = new ArtistDAO();
+        for(Artist artist : artistDAO.getArtistContainer(context).getArtistList()) {
+            for(Paint paint : artist.getPaintList()) {
+                if(paint.getName().equalsIgnoreCase(paintName)) {
+                    return artist;
+                }
+            }
+        }
+        return null;
+    }
+
     public List<Paint> getAllPaintings(Context context) {
         List<Paint> paintList = new ArrayList<>();
         ArtistDAO artistDAO = new ArtistDAO();

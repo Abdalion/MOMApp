@@ -15,9 +15,12 @@ import com.bumptech.glide.Glide;
 import abdalion.me.momapp.R;
 import abdalion.me.momapp.Utils;
 import abdalion.me.momapp.controller.ArtistController;
+import abdalion.me.momapp.model.Artist;
 import abdalion.me.momapp.view.main.MainActivity;
 
 public class DetalleActivity extends AppCompatActivity {
+
+    ArtistController artistController = new ArtistController();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +34,7 @@ public class DetalleActivity extends AppCompatActivity {
         textTitulo.setText(textTitulo.getText() + name);
 
         TextView textAutor = (TextView) findViewById(R.id.activity_detalle_autor);
-        textAutor.setText(textAutor.getText() + );
+        textAutor.setText(textAutor.getText() + (artistController.getArtistByPaint(name, this).getName()+""));
 
         ImageView imageView = (ImageView) findViewById(R.id.activity_detalle_imagen);
         Glide
