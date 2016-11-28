@@ -1,11 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context="abdalion.me.momapp.view.detalle.DetalleActivity">
 
+    <TextView
+        android:id="@+id/activity_detalle_titulo"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:text=""
+        />
 
-</android.support.design.widget.CoordinatorLayout>
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/activity_detalle_imagen"/>
+
+    <TextView
+        android:id="@+id/activity_detalle_autor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:text="By: "
+        />
+
+</LinearLayout>

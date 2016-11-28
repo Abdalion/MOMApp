@@ -14,6 +14,9 @@ public class Paint {
     @SerializedName("image")
     private String path;
 
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public String getPath() {
         return path;
@@ -22,5 +25,6 @@ public class Paint {
     public String getName() {
         return name;
     }
+
 
 }
