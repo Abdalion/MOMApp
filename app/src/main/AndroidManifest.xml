@@ -3,6 +3,7 @@
     package="abdalion.me.momapp">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -20,7 +21,13 @@
         <activity
             android:name=".view.detalle.DetalleActivity"
             android:label="@string/title_activity_detalle"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="51c263a8fd9ff3d2fd9d1071f25536062d3b58e0" />
+
+        <activity android:name=".view.login.LoginActivity"></activity>
     </application>
 
 </manifest>

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">MOMApp</string>
     <string name="title_activity_detalle">DetalleActivity</string>
+    <string name="share">Share to twitter</string>
+    <string name="login_title">Log in with Twitter to access \n all the apps funcionalities</string>
+
 </resources>
