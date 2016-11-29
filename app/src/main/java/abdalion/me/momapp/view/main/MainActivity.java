@@ -7,11 +7,20 @@ import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.webkit.CookieSyncManager;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
+import com.twitter.sdk.android.core.TwitterSession;
+import com.twitter.sdk.android.core.identity.TwitterAuthClient;
+
+import abdalion.me.momapp.view.concurso.Concurso;
 import io.fabric.sdk.android.Fabric;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,8 +36,8 @@ import abdalion.me.momapp.view.detalle.DetalleActivity;
 public class MainActivity extends AppCompatActivity {
 
     // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
-    private static final String TWITTER_KEY = "DTXGe4Z1QvIQThyvwX0upzsIw";
-    private static final String TWITTER_SECRET = "jZEy3gHtXFeI4J8Jf2Ez9IqTJxFO9lWMV16wKeWDCn44KM0c8G";
+    private static final String TWITTER_KEY = "7BLPD9g4GGf2GShHeoKJPtgaM";
+    private static final String TWITTER_SECRET = "DzCMX4P3AteivNKcwZ6c4OETf0vnhmwov38ma8cfebE8JZmEbc";
 
 
     RecyclerView recyclerView;
@@ -67,5 +76,21 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.action_concurso) {
+            startActivity(new Intent(MainActivity.this, Concurso.class));
+            return true;
+        }
+        else
+            return super.onOptionsItemSelected(item);
+    }
 }
